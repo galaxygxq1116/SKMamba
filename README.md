@@ -4,9 +4,11 @@ Official implementation for **Structure-aware Knowledge-guided Heterogeneous Mam
 
 SKMamba targets automated zygomaticomaxillary suture maturation staging from CBCT images.
 
+> **Dataset and text features:** [Download from Google Drive](https://drive.google.com/drive/folders/1DOyy81IGrfMvDtoOCGUDdkzLMx9pEnS9?usp=drive_link)
+
 ## Status
 
-Code and dataset are being organized and will be released soon.
+Code, dataset structure, and training scripts are provided for release use.
 
 ## Project Structure
 
@@ -85,7 +87,34 @@ python scripts/train.py --config configs/skmamba.yaml
 
 ## Data Preparation
 
-Place the ZMS classification dataset under:
+Download the dataset and text feature files from Google Drive:
+
+> **Dataset and text features:** [Download from Google Drive](https://drive.google.com/drive/folders/1DOyy81IGrfMvDtoOCGUDdkzLMx9pEnS9?usp=drive_link)
+
+The Google Drive folder contains:
+
+- `ZMS_classification.zip`
+- `descriptions.csv`
+- `zms_text_features.npy`
+
+After downloading:
+
+- Unzip `ZMS_classification.zip`
+- Place the extracted `ZMS_classification/` folder under `SKMamba/data/`
+- Place `descriptions.csv` and `zms_text_features.npy` under `SKMamba/features/`
+
+The final directory layout should be:
+
+```text
+SKMamba/
+├── data/
+│   └── ZMS_classification/
+├── features/
+│   ├── descriptions.csv
+│   └── zms_text_features.npy
+```
+
+The ZMS classification dataset should contain class folders:
 
 ```text
 data/ZMS_classification/
@@ -105,8 +134,6 @@ A/0012 RL.bmp
 A/0012 RU.bmp
 ```
 
-Dataset release note: the dataset will be released via Google Drive and the access link will be provided in this repository.
-
 ## Text Feature Preparation
 
 Place the text feature files under `features/`:
@@ -115,8 +142,6 @@ Place the text feature files under `features/`:
 features/zms_text_features.npy
 features/descriptions.csv
 ```
-
-The text features and descriptions file are being organized and will be released soon.
 
 ## Training
 
