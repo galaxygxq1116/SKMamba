@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+
+*.pt
+*.ckpt
+*.npy
+*.npz
+*.zip
+
+# Ignore model weights by default, but keep the released IEE checkpoint
+*.pth
+!checkpoints/iee_mambaout.pth
+
+outputs/logs/
+outputs/figures/
+outputs/checkpoints/
+
+data/
+!data/
+data/*
+!data/README.md
+
+*.csv
+*.png
+
+.DS_Store
+.vscode/

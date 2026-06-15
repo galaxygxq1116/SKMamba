@@ -1,0 +1,34 @@
+model:
+  backbone_name: mambaout_tiny
+  num_classes: 5
+  text_dim: 768
+  img_size: 224
+  drop_path_rate: 0.1
+
+data:
+  data_root: ./data/ZMS_classification
+  train_txt: ./splits/train.txt
+  val_txt: ./splits/test.txt
+  text_feat_path: ./features/zms_text_features.npy
+  csv_path: ./features/descriptions.csv
+
+checkpoint:
+  iee_pretrained_path: ./checkpoints/iee_mambaout.pth
+  save_path: ./outputs/checkpoints/skmamba.pth
+
+train:
+  batch_size: 32
+  epochs: 30
+  weight_decay: 0.05
+  seed: 42
+  num_workers: 4
+  backbone_lr: 1.0e-4
+  fusion_lr: 1.0e-3
+  head_lr: 1.0e-3
+  eta_min: 1.0e-6
+  label_smoothing: 0.1
+  device: cuda
+
+output:
+  log_path: ./outputs/logs/train_log.csv
+  plot_cm_path: ./outputs/figures/confusion_matrix.png
