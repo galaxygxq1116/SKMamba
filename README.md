@@ -1,7 +1,5 @@
 # SKMamba
 
-Official implementation for **Structure-aware Knowledge-guided Heterogeneous Mamba for Zygomaticomaxillary Suture Assessment**, MICCAI 2026.
-
 SKMamba targets automated zygomaticomaxillary suture maturation staging from CBCT images.
 
 > **Dataset and text features:** [Download from Google Drive](https://drive.google.com/drive/folders/1DOyy81IGrfMvDtoOCGUDdkzLMx9pEnS9?usp=drive_link)
