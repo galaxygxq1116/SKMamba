@@ -154,10 +154,10 @@ The default configuration saves checkpoints, logs, and figures under `outputs/`.
 ## Citation
 
 ```bibtex
-@inproceedings{skmamba2026,
+@article{guo2026structure,
   title={Structure-aware Knowledge-guided Heterogeneous Mamba for Zygomaticomaxillary Suture Assessment},
-  author={Author names},
-  booktitle={MICCAI},
+  author={Guo, Xiaoqi and Chen, Birui and Yang, Xinquan and Zhang, Chaoyun and Liu, Xuefen and Zheng, Mianjie and Tang, Kun and Li, Xuguang and Ma, Wen and Xu, Yanhua and others},
+  journal={arXiv preprint arXiv:2606.16749},
   year={2026}
 }
 ```
