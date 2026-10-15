@@ -2,6 +2,8 @@
 
 SKMamba targets automated zygomaticomaxillary suture maturation staging from CBCT images.
 
+[[Paper (arXiv)](https://arxiv.org/abs/2606.16749)] [[PDF](https://arxiv.org/pdf/2606.16749)]
+
 > **Dataset and text features:** [Download from Google Drive](https://drive.google.com/drive/folders/1DOyy81IGrfMvDtoOCGUDdkzLMx9pEnS9?usp=drive_link)
 
 ## Status
